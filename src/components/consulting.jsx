@@ -77,26 +77,27 @@ function Consulting() {
       <div className="">
         <div className="max-w-4xl mx-auto px-4 py-8">
           <p className="mb-4">
-            Experience the ease and flexibility of personalized, expert-led
-            consultation or instruction at the time and place that suits you
-            best.
+            Experience the convenience of personalized, expert-led consultation
+            or training at your preferred time and location.
           </p>
 
           <p className="mb-4">
-            Simply share your needs with us, and we'll craft a tailored solution
-            designed to alleviate any concerns while maximizing the benefits for
-            you and your team.
+            Share your requirements, and we'll design a customized solution to
+            address your concerns and maximize benefits for your team.
           </p>
 
           <h2 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">
-            Our customized consulting/training services offer:
+            Our bespoke consulting/training services include:
           </h2>
-          <ul className="max-w-md space-y-1 list-disc list-inside dark:text-gray-400">
-            <li>Tailored curriculum to align with your specific goals.</li>
-            <li>Flexible scheduling and course delivery options.</li>
+          <ul className=" space-y-1 list-disc list-inside dark:text-gray-400">
+            <li>A curriculum tailored to your specific goals.</li>
+            <li>Flexible scheduling and delivery options.</li>
             <li>Exclusive access to expert instructors.</li>
+            <li>Scalable solutions for groups of any size.</li>
+
             <li>
-              Scalable training solutions suitable for groups of any size.
+              Take the next step towards excellence by requesting a personalized
+              estimate today.
             </li>
           </ul>
         </div>

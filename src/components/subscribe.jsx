@@ -11,14 +11,14 @@ function Subscribe() {
           </h2>
 
           <p className="max-w-4xl mt-6 text-center text-gray-500 dark:text-gray-300">
-            Are you a regulatory compliance or healthcare professional who is
-            always eager to stay informed about the latest developments in your
-            field? If so, Expertly is your go-to destination.
+            Are you a regulatory compliance or healthcare professional eager to
+            stay informed about the latest developments in your field? If so,
+            Expertly is your ultimate resource.
           </p>
           <p className="max-w-4xl mt-6 text-center text-gray-500 dark:text-gray-300">
-            Discover a wealth of insightful information tailored to your
+            Gain access to a wealth of insightful information tailored to your
             interests and industry. Subscribe now to stay updated with the
-            latest happenings and advancements in your area of expertise
+            latest advancements and news in your area of expertise.
           </p>
         </div>
       </section>

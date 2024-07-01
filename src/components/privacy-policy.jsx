@@ -14,23 +14,13 @@ function PrivacyPolicy() {
             accessing this site, you are agreeing to the terms outlined in this
             Privacy Policy. Please note that this policy does not supersede any
             existing agreements directly established between you and Expertly.
-            This Privacy Policy also outlines our data storage practices,
-            including how your information will be stored in the United States,
-            the European Economic Area (EEA), and other locations outside the
-            EEA. Rest assured that any transfer of your data to the United
-            States or any other location outside the EEA will be conducted in
-            accordance with relevant European data protection laws. In
-            particular, for transfers to the United States, we ensure compliance
-            with the E.U.-U.S. Privacy Shield Framework. More information about
-            the Privacy Shield Framework can be found below.
           </p>
           <p className="mb-4">
-            This Privacy Policy also outlines our data storage practices,
-            including how your information will be stored in the United States,
-            the European Economic Area (EEA), and other locations outside the
-            EEA. Rest assured that any transfer of your data to the United
-            States or any other location outside the EEA will be conducted in
-            accordance with relevant European data protection laws. In
+            Our data storage practices involve storing your information in the
+            United States, the European Economic Area (EEA), and other locations
+            outside the EEA. Rest assured that any transfer of your data to the
+            United States or other locations outside the EEA will be conducted
+            in accordance with relevant European data protection laws. In
             particular, for transfers to the United States, we ensure compliance
             with the E.U.-U.S. Privacy Shield Framework. More information about
             the Privacy Shield Framework can be found below.
@@ -43,21 +33,20 @@ function PrivacyPolicy() {
             accessing premium limited-content sites, or making purchases. The
             personal information we collect usually includes your name, email
             address, phone number, country or location, and may extend to
-            additional details required to fulfill specific requests or orders.
+            additional details required to fulfill specific requests or orders
           </p>
           <p className="mb-4">
-            In the event that Expertly invites you to complete and submit an
-            online form, your participation is entirely optional. However,
-            should you choose to participate, we may request personal details
-            such as your first and last name, mailing address (including ZIP
-            code), email address, employer, job title, department, telephone and
-            fax numbers, and other relevant information. Moreover, when
-            purchasing products or services, you may be prompted to provide a
-            credit card number. Please note that for certain activities,
-            specific information may be marked as mandatory, while other details
-            are deemed voluntary. Failure to supply mandatory data for a
-            particular activity will result in the inability to proceed with
-            said activity.
+            If Expertly invites you to complete and submit an online form, your
+            participation is entirely optional. However, should you choose to
+            participate, we may request personal details such as your first and
+            last name, mailing address (including ZIP code), email address,
+            employer, job title, department, telephone and fax numbers, and
+            other relevant information. Moreover, when purchasing products or
+            services, you may be prompted to provide a credit card number.
+            Please note that for certain activities, specific information may be
+            marked as mandatory, while other details are deemed voluntary.
+            Failure to supply mandatory data for a particular activity will
+            result in the inability to proceed with said activity.
           </p>
           <p className="mb-4">
             Upon the purchase and installation of new products, we may request
@@ -82,21 +71,23 @@ function PrivacyPolicy() {
           </p>
           <p className="font-semibold mb-2">Utilization of Personal Data</p>
           <p className="mb-4">
-            The purposes for which Expertly may utilize your personal
-            information are as follows:
+            Expertly may utilize your personal information to:
           </p>
-          <p className="mb-4">
-            Streamlining your site experience by requesting your personal
-            information only once.
-          </p>
-          <p className="mb-4">
-            Providing relevant content creation and publication based on
-            customer preferences.
-          </p>
-          <p className="mb-4">
-            Notifying customers about product upgrades, special offers, updated
-            information, and new products and services.
-          </p>
+          <ul>
+            <li>
+              • Streamline your site experience by requesting your personal
+              information only once.
+            </li>
+            <li>
+              • Provide relevant content creation and publication based on
+              customer preferences.
+            </li>
+            <li>
+              • Notify customers about product upgrades, special offers, updated
+              information, and new products and services.
+            </li>
+          </ul>
+
           <p className="mb-4">
             If you wish to be removed from any Expertly distribution list,
             simply click on the provided link within each electronic
@@ -104,10 +95,10 @@ function PrivacyPolicy() {
             "unsubscribe".
           </p>
           <p className="mb-4">
-            In the event that you have provided your telephone number to
-            Expertly, you may receive telephone calls from us regarding new
-            products, services, or upcoming events. If you prefer not to receive
-            such calls, please inform us.
+            If you have provided your telephone number to Expertly, you may
+            receive telephone calls from us regarding new products, services, or
+            upcoming events. If you prefer not to receive such calls, please
+            inform us.
           </p>
 
           <p className="font-semibold mb-2">Connecting to External Websites</p>
@@ -157,18 +148,18 @@ function PrivacyPolicy() {
             comply with legal obligations such as national security or law
             enforcement requirements. Additionally, we may disclose your
             information to enforce our terms and conditions, respond to claims,
-            protect our rights or those of a third party, ensure safety of any
-            person, or prevent illegal activities including for the detection
+            protect our rights or those of a third party, ensure the safety of
+            any person, or prevent illegal activities including the detection
             and prevention of fraud or credit risk.
           </p>
           <p className="mb-4">
-            Please note that you will be notified when any third party collects
-            or shares identifying information about you, excluding our service
-            providers, so you can make an informed decision on whether or not to
-            share your information with such third party. If you do not wish to
-            have your information shared and want to opt-out of receiving
-            communications from any third party that is not our agent or service
-            provider, please contact the third party directly.
+            You will be notified when any third party collects or shares
+            identifying information about you, excluding our service providers,
+            so you can make an informed decision on whether or not to share your
+            information with such third party. If you do not wish to have your
+            information shared and want to opt out of receiving communications
+            from any third party that is not our agent or service provider,
+            please contact the third party directly.
           </p>
           <p className="font-semibold mb-2">Security</p>
           <p className="mb-4">
@@ -195,7 +186,7 @@ function PrivacyPolicy() {
             framework established by the United States Department of Commerce.
             This framework governs the collection, retention, and use of
             personal data from EEA countries, ensuring adherence to stringent
-            privacy standards
+            privacy standards.
           </p>
           <p className="mb-4">
             As part of our commitment to the Privacy Shield principles, we
@@ -206,12 +197,12 @@ function PrivacyPolicy() {
             to safeguard against unauthorized access or disclosure.
           </p>
           <p className="mb-4">
-            It's important for visitors outside the US to understand that by
-            accessing our website, they are consenting to the transfer of their
-            information to the US, where our servers are located. Depending on
-            the nature of the data and its storage methods, this information may
-            also be transferred to other countries. While these countries may
-            have differing data protection laws, our privacy policy remains
+            Visitors outside the US should understand that by accessing our
+            website, they are consenting to the transfer of their information to
+            the US, where our servers are located. Depending on the nature of
+            the data and its storage methods, this information may also be
+            transferred to other countries. While these countries may have
+            differing data protection laws, our privacy policy remains
             consistent in governing the usage, storage, and collection of
             personal data.
           </p>
@@ -261,17 +252,17 @@ function PrivacyPolicy() {
             provide a response within 45 days. Additionally, you have the option
             to escalate your complaint to your local data protection authority,
             and we will collaborate with them to address your concerns
-            effectively
+            effectively.
           </p>
           <p className="mb-4">
-            It's important to note that if your complaint remains unresolved
-            through these channels, there may be a binding arbitration option
-            available under certain limited circumstances. This option requires
-            that you: (1) directly raise your complaint with us using the
-            contact information provided above, allowing us the opportunity to
-            resolve the issue, and (2) escalate the matter through the relevant
-            data protection authority, affording the U.S. Department of Commerce
-            the opportunity to address the complaint without any cost to you.
+            If your complaint remains unresolved through these channels, there
+            may be a binding arbitration option available under certain limited
+            circumstances. This option requires that you: (1) directly raise
+            your complaint with us using the contact information provided above,
+            allowing us the opportunity to resolve the issue, and (2) escalate
+            the matter through the relevant data protection authority, affording
+            the U.S. Department of Commerce the opportunity to address the
+            complaint without any cost to you.
           </p>
           <p className="mb-4">
             Expertly is subject to the investigative and enforcement authority
@@ -308,10 +299,9 @@ function PrivacyPolicy() {
             processors, we exclusively collect, process, and store personal
             information to facilitate the provision of services to our
             customers. We uphold strict adherence to this principle, ensuring
-            that the information entrusted to us is never utilized for our own
-            purposes.
+            that the information entrusted to us is never
           </p>
-          <p className="font-semibold mb-2">Modifications</p>
+          {/* <p className="font-semibold mb-2">Modifications</p>
           <p className="mb-4">
             Expertly reserves the right to modify or supplement this Privacy
             Policy at its discretion. We encourage you to periodically review
@@ -319,7 +309,7 @@ function PrivacyPolicy() {
             In the event of material changes to this Privacy Policy, we will
             notify you through this platform, via email, or by posting a notice
             on our homepage.
-          </p>
+          </p> */}
         </div>
       </div>
     </Layout>
