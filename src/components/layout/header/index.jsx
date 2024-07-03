@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ExpertlyLogoLogin from "../../../Assets/logo/ExpertlyLogoLogin.jpg";
+import ExpertlyLogoLogin from "../../../Assets/logo/ExpertlyLogoLogin.png";
 import { Link } from "react-router-dom";
 import { useCartContext } from "../../../context/cart_context";
 import { useAuth } from "../../../context/AuthProvider";
@@ -35,7 +35,7 @@ function Header() {
   };
 
   return (
-    <header className="border-b bg-white font-sans min-h-[60px] px-10 py-3 relative tracking-wide relative z-50">
+    <header className="border-b bg-lime-50  min-h-[60px] px-10 py-3 relative tracking-wide relative z-50 font-handwriting">
       <div className="flex flex-wrap items-center max-lg:gap-y-6 max-sm:gap-x-4">
         <Link to="/">
           <img src={ExpertlyLogoLogin} alt="Expertlylogo" className="w-36" />
@@ -210,7 +210,7 @@ function Header() {
                     </li>
                     <li>
                       <button
-                        className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100"
+                        className="block w-full text-left indigo-900 px-4 py-2 text-gray-700 hover:bg-gray-100"
                         onClick={handleLogout}
                       >
                         Logout
@@ -224,13 +224,13 @@ function Header() {
             <>
               <Link
                 to="/login"
-                className="px-3 py-2 text-sm rounded-full font-bold text-white border-2 border-[#007bff] bg-[#007bff] transition-all ease-in-out duration-300 hover:bg-transparent hover:text-[#007bff]"
+                className="px-3 py-2 text-sm rounded-full font-bold text-white border-2 border-[#007bff] bg-indigo-900 transition-all ease-in-out duration-300 hover:bg-transparent hover:text-[#007bff]"
               >
                 Login
               </Link>
               <Link
                 to="/signup"
-                className="px-3 py-2 text-sm rounded-full font-bold text-white border-2 border-[#007bff] bg-[#007bff] transition-all ease-in-out duration-300 hover:bg-transparent hover:text-[#007bff]"
+                className="px-3 py-2 text-sm rounded-full font-bold text-white border-2 border-[#007bff] bg-indigo-900 transition-all ease-in-out duration-300 hover:bg-transparent hover:text-[#007bff]"
               >
                 Sign up
               </Link>

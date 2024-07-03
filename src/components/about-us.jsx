@@ -37,7 +37,7 @@ function Aboutus() {
             <div class="mt-12 md:mt-0">
               <img
                 src={aboutspageimage}
-                alt="About Us Image"
+                alt="About Us"
                 class="object-cover rounded-lg shadow-md"
               />
             </div>

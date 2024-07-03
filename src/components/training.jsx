@@ -55,15 +55,15 @@ function Training() {
 
   return (
     <Layout>
-      <MDBContainer fluid>
+      <MDBContainer fluid className="mt-4">
         {courses?.map((course) => (
           <MDBRow
-            className="justify-content-center mb-3"
+            className="justify-content-center mb-3 "
             key={course?.courseID}
           >
-            <MDBCol md="12" xl="10">
+            <MDBCol md="12" xl="10" >
               <MDBCard className="shadow-0 border rounded-3">
-                <MDBCardBody>
+                <MDBCardBody className="bg-teal-50">
                   <MDBRow>
                     {/* <MDBCol md="12" lg="3" className="mb-4 mb-lg-0">
                       <MDBRipple

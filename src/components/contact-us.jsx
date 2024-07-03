@@ -69,7 +69,7 @@ function ContactUs() {
 
   return (
     <Layout>
-      <section className="bg-white dark:bg-gray-900">
+      <section className="bg-slate-100 dark:bg-gray-900">
         <div className="container px-6 py-12 mx-auto">
           <div className="text-center">
             <p className="font-medium text-blue-500 dark:text-blue-400">
@@ -154,7 +154,7 @@ function ContactUs() {
         </div>
       </section>
 
-      <section className="bg-white dark:bg-gray-900">
+      <section className="bg-slate-100 dark:bg-gray-900">
         <div className="container px-4 py-8 mx-auto md:w-2/3">
           <div className="p-4 rounded-lg bg-gray-50 dark:bg-gray-800 md:p-6">
             <form onSubmit={handleSubmit}>

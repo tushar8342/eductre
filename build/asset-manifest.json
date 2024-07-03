@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.1a65727c.css",
-    "main.js": "/static/js/main.a618cb6f.js",
+    "main.css": "/static/css/main.955728de.css",
+    "main.js": "/static/js/main.773a6244.js",
     "static/js/453.dc01b02e.chunk.js": "/static/js/453.dc01b02e.chunk.js",
     "static/media/firstslidelabel.jpg": "/static/media/firstslidelabel.6fd33659ecfb460201ea.jpg",
     "static/media/secondslidelabel.jpg": "/static/media/secondslidelabel.ee16d8e97e1b2094945d.jpg",
     "static/media/thirdslidelabel.jpg": "/static/media/thirdslidelabel.2332fe561b4e67665838.jpg",
     "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.bacd5de623fb563b961a.ttf",
+    "static/media/background.jpg": "/static/media/background.a8d0ef343e4af9758066.jpg",
     "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.60127e352b7a11f7f1bc.ttf",
     "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.4d986b00ff9ca3828fbd.woff2",
     "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.455ea818179b4def0c43.woff2",
@@ -14,15 +15,17 @@
     "static/media/profilePNG.png": "/static/media/profilePNG.6d2cbf7dd40155ba84a3.png",
     "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.21cb8f55d8e0c5b89751.woff2",
     "static/media/aboutspageimage.jpg": "/static/media/aboutspageimage.fc32612a5b20684d851b.jpg",
+    "static/media/ExpertlyLogo.png": "/static/media/ExpertlyLogo.a54355f2ed9f7a2641a5.png",
+    "static/media/ExpertlyLogoLogin.png": "/static/media/ExpertlyLogoLogin.a54355f2ed9f7a2641a5.png",
     "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.c8e090db312b0bea2aa2.ttf",
     "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.cf7f5903d06b79ad60f1.woff2",
     "index.html": "/index.html",
-    "main.1a65727c.css.map": "/static/css/main.1a65727c.css.map",
-    "main.a618cb6f.js.map": "/static/js/main.a618cb6f.js.map",
+    "main.955728de.css.map": "/static/css/main.955728de.css.map",
+    "main.773a6244.js.map": "/static/js/main.773a6244.js.map",
     "453.dc01b02e.chunk.js.map": "/static/js/453.dc01b02e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1a65727c.css",
-    "static/js/main.a618cb6f.js"
+    "static/css/main.955728de.css",
+    "static/js/main.773a6244.js"
   ]
 }

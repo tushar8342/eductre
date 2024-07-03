@@ -7,7 +7,13 @@ module.exports = {
     "./node_modules/tw-elements-react/dist/js/**/*.js",
   ],
   theme: {
-    extend: {},
+    extend: {
+      extend: {
+        fontFamily: {
+          custom: ["Lucida Handwriting", "cursive"],
+        },
+      },
+    },
   },
   plugins: [
     require("flowbite/plugin"),
