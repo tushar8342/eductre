@@ -83,7 +83,7 @@ function Header() {
                 to="/"
                 className="hover:text-[#007bff] text-[15px] text-[#007bff] block font-bold"
               >
-                Main Page
+                Home
               </Link>
             </li>
             {/* <li className="group max-lg:border-b max-lg:py-3 relative">
