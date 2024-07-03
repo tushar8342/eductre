@@ -7,7 +7,7 @@ function Footer() {
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="grid grid-cols-2 md:col-span-3 lg:grid-cols-6 gap-y-16 gap-x-12">
           <div className="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
-            <img className="h-14 w-17" src={ExpertlyLogoLogin} alt="" />
+            <img className="h-13 w-18" src={ExpertlyLogoLogin} alt="" />
 
             <p className="text-base leading-relaxed text-gray-600 mt-7">
               Driving progress with cutting-edge training and consulting
@@ -100,7 +100,7 @@ function Footer() {
                   className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                 >
                   {" "}
-                  About Us{" "}
+                  Our Story{" "}
                 </Link>
               </li>
 
@@ -110,7 +110,7 @@ function Footer() {
                   className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                 >
                   {" "}
-                  Contact Us{" "}
+                  Get in Touch{" "}
                 </Link>
               </li>
 
@@ -120,7 +120,7 @@ function Footer() {
                   className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                 >
                   {" "}
-                  Terms of Use{" "}
+                  User Agreement{" "}
                 </Link>
               </li>
             </ul>
@@ -138,7 +138,7 @@ function Footer() {
                   className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                 >
                   {" "}
-                  Consulting{" "}
+                  Advisory Services{" "}
                 </Link>
               </li>
 
@@ -170,7 +170,7 @@ function Footer() {
                   className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                 >
                   {" "}
-                  Privacy Policy{" "}
+                  Data Protection Policy{" "}
                 </Link>
               </li>
               <li>
@@ -179,7 +179,7 @@ function Footer() {
                   className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                 >
                   {" "}
-                  Subscribe{" "}
+                  Follow Us{" "}
                 </Link>
               </li>
             </ul>
@@ -218,7 +218,7 @@ function Footer() {
         <hr className="mt-16 mb-10 border-gray-200" />
 
         <p className="text-sm text-center text-gray-600">
-          © Copyright 2024, All Rights Reserved by Expertly
+          © Copyright 2024, All Rights Reserved by Eductre
         </p>
       </div>
     </section>

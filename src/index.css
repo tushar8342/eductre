@@ -16,6 +16,9 @@ body {
   background-repeat: no-repeat; /* Prevent the image from repeating */
   background-position: center; /* Center the image */
   background-attachment: fixed;
+
+  color: #000 !important;
+  font-weight: 800 !important;
 }
 
 code {

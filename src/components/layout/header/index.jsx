@@ -35,10 +35,14 @@ function Header() {
   };
 
   return (
-    <header className="border-b bg-lime-50  min-h-[60px] px-10 py-3 relative tracking-wide relative z-50 font-handwriting">
+    <header className="border-b text-xl bg-lime-50  min-h-[60px] px-10 py-3 relative tracking-wide relative z-50 font-handwriting">
       <div className="flex flex-wrap items-center max-lg:gap-y-6 max-sm:gap-x-4">
         <Link to="/">
-          <img src={ExpertlyLogoLogin} alt="Expertlylogo" className="w-36" />
+          <img
+            src={ExpertlyLogoLogin}
+            alt="Expertlylogo"
+            className="h-10 w -10"
+          />
         </Link>
 
         <div id="collapseMenu" className={getMenuClassNames()}>
@@ -79,10 +83,10 @@ function Header() {
                 to="/"
                 className="hover:text-[#007bff] text-[15px] text-[#007bff] block font-bold"
               >
-                Home
+                Main Page
               </Link>
             </li>
-            <li className="group max-lg:border-b max-lg:py-3 relative">
+            {/* <li className="group max-lg:border-b max-lg:py-3 relative">
               <Link
                 to=""
                 className="hover:text-[#007bff] text-gray-600 text-[15px] font-bold lg:hover:fill-[#007bff] block"
@@ -120,8 +124,24 @@ function Header() {
                   </Link>
                 </li>
               </ul>
+            </li> */}
+            <li className="group max-lg:border-b max-lg:py-3 relative">
+              <Link
+                to="/training"
+                className="hover:text-[#007bff] text-gray-600 font-bold text-[15px] lg:hover:fill-[#007bff] block"
+              >
+                Learning
+              </Link>
             </li>
             <li className="group max-lg:border-b max-lg:py-3 relative">
+              <Link
+                to="/archive"
+                className="hover:text-[#007bff] text-gray-600 font-bold text-[15px] lg:hover:fill-[#007bff] block"
+              >
+                Resources
+              </Link>
+            </li>
+            {/* <li className="group max-lg:border-b max-lg:py-3 relative">
               <Link
                 to="/about-us"
                 className="hover:text-[#007bff] text-gray-600 font-bold text-[15px] lg:hover:fill-[#007bff] block"
@@ -144,7 +164,30 @@ function Header() {
               >
                 Terms of Use
               </Link>
-            </li>
+            </li> */}
+            <Link to="/cart" className="mt-0 sm:mt-4">
+              <span className="relative mr-0">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20px"
+                  height="20px"
+                  className="cursor-pointer fill-[#000] hover:fill-[#007bff] inline-block"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M164.96 300.004h.024c.02 0 .04-.004.059-.004H437a15.003 15.003 0 0 0 14.422-10.879l60-210a15.003 15.003 0 0 0-2.445-13.152A15.006 15.006 0 0 0 497 60H130.367l-10.722-48.254A15.003 15.003 0 0 0 105 0H15C6.715 0 0 6.715 0 15s6.715 15 15 15h77.969c1.898 8.55 51.312 230.918 54.156 243.71C131.184 280.64 120 296.536 120 315c0 24.812 20.188 45 45 45h272c8.285 0 15-6.715 15-15s-6.715-15-15-15H165c-8.271 0-15-6.73-15-15s6.73-15 15-15zm312.28-210-51.429 180H171.525l-40-180H477.24z"
+                    data-original="#000000"
+                  ></path>
+                  <path
+                    d="M150.967 407.375c-24.813 0-45 20.187-45 45s20.187 45 45 45 45-20.187 45-45-20.187-45-45-45zm0 60c-8.271 0-15-6.73-15-15s6.729-15 15-15 15 6.73 15 15-6.729 15-15 15zm211-60c-24.813 0-45 20.187-45 45s20.187 45 45 45 45-20.187 45-45-20.187-45-45-45zm0 60c-8.271 0-15-6.73-15-15s6.729-15 15-15 15 6.73 15 15-6.729 15-15 15zm0 0"
+                    data-original="#000000"
+                  ></path>
+                </svg>
+                <span className="absolute left-auto -ml-1 -top-1 rounded-full bg-red-500 px-1 py-0 text-xs text-white">
+                  {total_items}
+                </span>
+              </span>
+            </Link>
           </ul>
         </div>
         <div
@@ -152,7 +195,7 @@ function Header() {
             isMenuOpen ? "hidden" : ""
           }`}
         >
-          <Link to="/cart" className="mt-0 sm:mt-4">
+          {/* <Link to="/cart" className="mt-0 sm:mt-4">
             <span className="relative mr-0">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -174,7 +217,7 @@ function Header() {
                 {total_items}
               </span>
             </span>
-          </Link>
+          </Link> */}
           {user ? (
             <>
               {" "}
