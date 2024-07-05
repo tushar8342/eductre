@@ -106,7 +106,7 @@ function Home() {
                 About Us
               </h2> */}
               <p class="mt-4 text-gray-600 text-lg">
-                At Educter, we're passionate about making high-quality,
+                At Eductre, we're passionate about making high-quality,
                 impactful training accessible to everyone. We believe that
                 online learning offers a powerful way to gain in-demand skills,
                 stay ahead of the curve, and unlock your full potential.
