@@ -11,34 +11,34 @@ import { Link } from "react-router-dom";
 function Aboutus() {
   return (
     <Layout>
-      <section class="bg-gray-100">
-        <div class="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
-          <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-            <div class="max-w-lg">
-              <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+      <section className="bg-gray-100">
+        <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+            <div className="max-w-lg">
+              <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
                 About Us
               </h2>
-              <p class="mt-4 text-gray-600 text-lg">
+              <p className="mt-4 text-gray-600 text-lg">
                 At Eductre, we're passionate about making high-quality,
                 impactful training accessible to everyone. We believe that
                 online learning offers a powerful way to gain in-demand skills,
                 stay ahead of the curve, and unlock your full potential.
               </p>
-              <div class="mt-8">
+              <div className="mt-8">
                 <Link
                   to="/"
-                  class="text-blue-500 hover:text-blue-600 font-medium"
+                  className="text-blue-500 hover:text-blue-600 font-medium"
                 >
                   Learn more about us
-                  <span class="ml-2">&#8594;</span>
+                  <span className="ml-2">&#8594;</span>
                 </Link>
               </div>
             </div>
-            <div class="mt-12 md:mt-0">
+            <div className="mt-12 md:mt-0">
               <img
                 src={aboutspageimage}
                 alt="About Us"
-                class="object-cover rounded-lg shadow-md"
+                className="object-cover rounded-lg shadow-md"
               />
             </div>
           </div>
