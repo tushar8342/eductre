@@ -25,7 +25,6 @@ export const CoursesProvider = ({ children }) => {
           (site) => site.name === "eductre" || site.siteId === 2
         )
       );
-      console.log(filteredCourses);
       dispatch({ type: GET_COURSES, payload: filteredCourses });
     } catch (error) {
       console.error("Error fetching courses:", error);

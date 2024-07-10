@@ -10,8 +10,8 @@ function TermsOfUse() {
           {/* <p className="font-semibold mb-2">Legal</p> */}
           <p className="font-semibold mb-2">Copyright Issues</p>
           <p className="mb-4">
-            When utilizing the Expertly website, you may come across documents
-            or information resources provided by individuals, companies, or
+            When utilizing the Eductre website, you may come across documents or
+            information resources provided by individuals, companies, or
             organizations that may be protected by U.S. and international
             copyright laws. Any transmission or reproduction of these protected
             items beyond the scope of fair use as defined in copyright law
@@ -22,9 +22,9 @@ function TermsOfUse() {
           <p className="mb-4">
             The information presented on this website is gathered, maintained,
             and offered for the convenience of visitors. Although efforts are
-            made to ensure the information is accurate and current, Expertly
+            made to ensure the information is accurate and current, Eductre
             cannot guarantee the accuracy or authenticity of information
-            originating from third parties. Expertly is not liable for any
+            originating from third parties. Eductre is not liable for any
             decisions, actions, or omissions made based on the information
             provided herein, nor for any consequences resulting from such
             reliance.
@@ -34,22 +34,22 @@ function TermsOfUse() {
             The information presented here is intended for general informational
             purposes only. You are responsible for making informed decisions
             based on your specific circumstances and independent research.
-            Expertly is not liable for any actions or omissions resulting from
+            Eductre is not liable for any actions or omissions resulting from
             your reliance on website content.
           </p> */}
           <p className="font-semibold mb-2">External Links</p>
           <p className="mb-4">
             This web portal may include hyperlinks to external websites and
             pages maintained by other public and private entities. These
-            hyperlinks are created by Expertly to provide relevant information
-            to visitors. However, the inclusion of any link does not imply
+            hyperlinks are created by Eductre to provide relevant information to
+            visitors. However, the inclusion of any link does not imply
             endorsement of the external site, its content, or the sponsoring
-            organization. Expertly reserves the right to remove or replace these
+            organization. Eductre reserves the right to remove or replace these
             links at any time without notice.
           </p>
           <p className="mb-4">
             If you encounter issues with linked external websites, please
-            contact the respective organization. Expertly is not responsible for
+            contact the respective organization. Eductre is not responsible for
             the content or functionality of external websites.
           </p>
           {/* <p className="mb-4">
@@ -58,12 +58,12 @@ function TermsOfUse() {
             or organization referenced therein, nor does it imply agreement with
             any views expressed on the linked website. Hypertext links to
             external websites and pages may be removed or replaced at the
-            discretion of Expertly, without prior notice.
+            discretion of Eductre, without prior notice.
           </p>
           <p className="mb-4">
             If you encounter any issues regarding the format, accuracy,
             timeliness, or completeness of a linked external website, please
-            contact the organization responsible for that website. Expertly does
+            contact the organization responsible for that website. Eductre does
             not exercise control over, nor assume responsibility for, the
             content of linked external websites or pages.
           </p> */}

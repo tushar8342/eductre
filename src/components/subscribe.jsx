@@ -13,7 +13,7 @@ function Subscribe() {
           <p className="max-w-4xl mt-6 text-center text-gray-500 dark:text-gray-300">
             Are you a regulatory compliance or healthcare professional eager to
             stay informed about the latest developments in your field? If so,
-            Expertly is your ultimate resource.
+            Eductre is your ultimate resource.
           </p>
           <p className="max-w-4xl mt-6 text-center text-gray-500 dark:text-gray-300">
             Gain access to a wealth of insightful information tailored to your
@@ -97,7 +97,7 @@ function Subscribe() {
                     />
                   </div>
                   <label htmlFor="remember" className="ms-2 text-sm  ">
-                    I agree to receive information about goexpertly.com training
+                    I agree to receive information about eductre.com training
                   </label>
                 </div>
               </div>

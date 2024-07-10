@@ -8,12 +8,12 @@ function PrivacyPolicy() {
         <div className="max-w-4xl mx-auto px-4 py-8">
           <h2 className="text-2xl font-semibold mb-4">Privacy Policy</h2>
           <p className="mb-4">
-            At Expertly, we are dedicated to safeguarding your privacy and
+            At Eductre, we are dedicated to safeguarding your privacy and
             providing you with a secure online experience. This privacy
             statement outlines our data collection and usage practices. By
             accessing this site, you are agreeing to the terms outlined in this
             Privacy Policy. Please note that this policy does not supersede any
-            existing agreements directly established between you and Expertly.
+            existing agreements directly established between you and Eductre.
           </p>
           <p className="mb-4">
             Our data storage practices involve storing your information in the
@@ -27,7 +27,7 @@ function PrivacyPolicy() {
           </p>
           <p className="font-semibold mb-2">Gathering Personal Data</p>
           <p className="mb-4">
-            At Expertly, we will only request personal information when it is
+            At Eductre, we will only request personal information when it is
             necessary to identify you or to facilitate contact with you. This
             typically occurs when you are subscribing to email newsletters,
             accessing premium limited-content sites, or making purchases. The
@@ -36,7 +36,7 @@ function PrivacyPolicy() {
             additional details required to fulfill specific requests or orders
           </p>
           <p className="mb-4">
-            If Expertly invites you to complete and submit an online form, your
+            If Eductre invites you to complete and submit an online form, your
             participation is entirely optional. However, should you choose to
             participate, we may request personal details such as your first and
             last name, mailing address (including ZIP code), email address,
@@ -64,14 +64,14 @@ function PrivacyPolicy() {
             supported.
           </p>
           <p className="mb-4">
-            It's important to note that while Expertly may track a visitor's
+            It's important to note that while Eductre may track a visitor's
             arrival at the website, we do not and will not gather information
             about the other sites you have visited. Additionally, we do not link
             IP addresses to personally identifiable details.
           </p>
           <p className="font-semibold mb-2">Utilization of Personal Data</p>
           <p className="mb-4">
-            Expertly may utilize your personal information to:
+            Eductre may utilize your personal information to:
           </p>
           <ul>
             <li>
@@ -89,13 +89,12 @@ function PrivacyPolicy() {
           </ul>
 
           <p className="mb-4">
-            If you wish to be removed from any Expertly distribution list,
-            simply click on the provided link within each electronic
-            communication or reply to the email with the subject line
-            "unsubscribe".
+            If you wish to be removed from any Eductre distribution list, simply
+            click on the provided link within each electronic communication or
+            reply to the email with the subject line "unsubscribe".
           </p>
           <p className="mb-4">
-            If you have provided your telephone number to Expertly, you may
+            If you have provided your telephone number to Eductre, you may
             receive telephone calls from us regarding new products, services, or
             upcoming events. If you prefer not to receive such calls, please
             inform us.
@@ -103,17 +102,17 @@ function PrivacyPolicy() {
 
           <p className="font-semibold mb-2">Connecting to External Websites</p>
           <p className="mb-4">
-            The Expertly website may contain links to external websites,
+            The Eductre website may contain links to external websites,
             including partner websites. It is advisable to review the privacy
             policies and other guidelines of these third-party sites, as they
-            are not governed by Expertly's privacy policy. Expertly has no
-            control over the content or information gathering practices of these
+            are not governed by Eductre's privacy policy. Eductre has no control
+            over the content or information gathering practices of these
             external sites.
           </p>
           <p className="mb-4">
             Please note that this Privacy Policy specifically pertains to
-            Expertly's privacy practices and does not extend to the privacy
-            policies or practices of third-party websites or features. Expertly
+            Eductre's privacy practices and does not extend to the privacy
+            policies or practices of third-party websites or features. Eductre
             cannot be held responsible for the privacy policies and/or practices
             of third parties.
           </p>
@@ -132,12 +131,12 @@ function PrivacyPolicy() {
               <li>
                 prevent or address potential or actual harm or interference with
                 the rights, property, operations, users, or any individuals
-                associated with Expertly;
+                associated with Eductre;
               </li>
               <li>
                 safeguard our rights, prevent fraudulent activities, and comply
                 with court orders, judicial proceedings, or legal processes
-                served on Expertly.
+                served on Eductre.
               </li>
             </ol>
           </p>
@@ -164,7 +163,7 @@ function PrivacyPolicy() {
           <p className="font-semibold mb-2">Security</p>
           <p className="mb-4">
             Ensuring the security and confidentiality of your information is
-            paramount at Expertly. We have implemented robust measures to
+            paramount at Eductre. We have implemented robust measures to
             safeguard your privacy and prevent unauthorized access, misuse, or
             alteration of your data.
           </p>
@@ -175,14 +174,14 @@ function PrivacyPolicy() {
             your information is limited to authorized personnel only.
           </p>
           <p className="mb-4">
-            At Expertly, we remain committed to upholding the highest standards
+            At Eductre, we remain committed to upholding the highest standards
             of data protection, providing you with peace of mind as you engage
             with our services.
           </p>
           <p className="font-semibold mb-2">EU-US Privacy Shield</p>
           <p className="mb-4">
             For individuals residing in the European Economic Area (EEA),
-            Expertly remains fully compliant with the EU-US Privacy Shield
+            Eductre remains fully compliant with the EU-US Privacy Shield
             framework established by the United States Department of Commerce.
             This framework governs the collection, retention, and use of
             personal data from EEA countries, ensuring adherence to stringent
@@ -207,8 +206,8 @@ function PrivacyPolicy() {
             personal data.
           </p>
           <p className="mb-4">
-            At Expertly, we are committed to maintaining the highest standards
-            of privacy protection and will continue to uphold the principles
+            At Eductre, we are committed to maintaining the highest standards of
+            privacy protection and will continue to uphold the principles
             outlined in our privacy policy, regardless of jurisdiction. Your
             trust and confidence in our handling of your personal data are of
             paramount importance to us.
@@ -217,7 +216,7 @@ function PrivacyPolicy() {
             Responsibility and Accountability for Subsequent Transfers
           </p>
           <p className="mb-4">
-            Expertly is mandated to adhere to specific procedures when
+            Eductre is mandated to adhere to specific procedures when
             transferring personal data received from the European Union to third
             parties. This includes incorporating contractual provisions into our
             third-party agreements, obligating them to uphold the same level of
@@ -240,7 +239,7 @@ function PrivacyPolicy() {
             Privacy Complaints Resolution, Remediation, and Enforcement
           </p>
           <p className="mb-4">
-            In accordance with the Privacy Shield Principles, Expertly is
+            In accordance with the Privacy Shield Principles, Eductre is
             dedicated to addressing and resolving complaints concerning your
             privacy and the collection or usage of your personal information, at
             no expense to you. European Union individuals seeking clarification
@@ -265,8 +264,8 @@ function PrivacyPolicy() {
             complaint without any cost to you.
           </p>
           <p className="mb-4">
-            Expertly is subject to the investigative and enforcement authority
-            of the Federal Trade Commission in cases of non-compliance with the
+            Eductre is subject to the investigative and enforcement authority of
+            the Federal Trade Commission in cases of non-compliance with the
             Privacy Shield.
           </p>
           <p className="font-semibold mb-2">Access to information</p>
@@ -303,9 +302,9 @@ function PrivacyPolicy() {
           </p>
           {/* <p className="font-semibold mb-2">Modifications</p>
           <p className="mb-4">
-            Expertly reserves the right to modify or supplement this Privacy
+            Eductre reserves the right to modify or supplement this Privacy
             Policy at its discretion. We encourage you to periodically review
-            this section of Expertly’s website to stay informed of any updates.
+            this section of Eductre’s website to stay informed of any updates.
             In the event of material changes to this Privacy Policy, we will
             notify you through this platform, via email, or by posting a notice
             on our homepage.

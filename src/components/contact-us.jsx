@@ -111,7 +111,7 @@ function ContactUs() {
                 Our friendly team is here to help.
               </p>
               <p className="mt-2 text-blue-500 dark:text-blue-400">
-                support@goexpertly.com
+                care@eductre.com
               </p>
             </div>
 
@@ -145,9 +145,7 @@ function ContactUs() {
                 Come say hello at our office.
               </p>
               <p className="mt-2 text-blue-500 dark:text-blue-400">
-                30 N Gould St, STE R, Sheridan, WY 82801
-                <br />
-                1317 Edgewater Dr, Orlando, FL 32804
+                807 Bel Esprit Cir San Marcos, California 92069 US
               </p>
             </div>
           </div>
