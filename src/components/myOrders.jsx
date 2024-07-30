@@ -81,7 +81,7 @@ function MyOrders() {
                           <span className="dark:text-gray-400 text-gray-300">
                             Instructor:{" "}
                           </span>{" "}
-                          {course.instructors}
+                          {course.instructor}
                         </p>
                         <p className="text-sm dark:text-white leading-none text-gray-800">
                           <span className="dark:text-gray-400 text-gray-300">
@@ -98,12 +98,12 @@ function MyOrders() {
                       </div>
                     </div>
                     <div className="flex justify-end space-x-6 items-start w-full">
-                      {/* <button
+                      <button
                         className="group relative flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
                         onClick={() => setPlayingVideo(course.videoLink)}
                       >
                         Play Video
-                      </button> */}
+                      </button>
                       <a
                         className="group relative  flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 "
                         href={course.invoiceUrl}

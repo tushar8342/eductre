@@ -13,6 +13,7 @@
     "emailjs-com": "^3.2.0",
     "flowbite": "^2.3.0",
     "flowbite-react": "^0.8.0",
+    "html-react-parser": "^5.1.12",
     "mdb-react-ui-kit": "^8.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

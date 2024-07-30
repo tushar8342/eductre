@@ -4,16 +4,19 @@ import { useParams } from "react-router-dom";
 import styled from "styled-components";
 import { useCoursesContext } from "../context/courses_context";
 import { TbWorld } from "react-icons/tb";
-import { RiClosedCaptioningFill } from "react-icons/ri";
+// import { RiClosedCaptioningFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import { useCartContext } from "../context/cart_context";
 import { Oval } from "react-loader-spinner";
+import { FaCalendarAlt, FaClock } from "react-icons/fa";
+import parse from "html-react-parser";
 
 const SingleTrainingDetail = () => {
   const { id } = useParams();
   const { fetchSingleCourse, single_course } = useCoursesContext();
   const { addToCart } = useCartContext();
   const [loading, setLoading] = useState(true);
+  const [selectedPricing, setSelectedPricing] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -22,6 +25,12 @@ const SingleTrainingDetail = () => {
     };
     fetchData();
   }, [id, fetchSingleCourse]);
+
+  useEffect(() => {
+    if (single_course && single_course.Pricings) {
+      setSelectedPricing(single_course.Pricings[0]);
+    }
+  }, [single_course]);
 
   if (loading) {
     return (
@@ -45,52 +54,94 @@ const SingleTrainingDetail = () => {
   const {
     courseID,
     title,
-    instructors,
+    instructor,
     // duration,
-    price,
+    // price,
     discountedPrice,
     description,
     what_you_will_learn,
     // content,
     imageSrc,
+    Pricings,
+    webinarDate,
+    duration,
+    areas_covered,
+    who_will_benefit,
+    instructor_profile,
+    why_register,
+    background,
+    // target_companies,
+    // target_association,
   } = single_course;
-  // console.log('single_course:', single_course)
+
+  const dateTime = new Date(webinarDate);
+
+  const formattedDateTimeET = dateTime.toLocaleString("en-US", {
+    timeZone: "America/New_York",
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: true,
+  });
+
+  const formattedDateTimePT = dateTime.toLocaleString("en-US", {
+    timeZone: "America/Los_Angeles",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: true,
+  });
+  const handlePricingChange = (e) => {
+    const pricing = Pricings.find(
+      (pricing) => pricing.id === parseInt(e.target.value)
+    );
+    setSelectedPricing(pricing);
+  };
 
   return (
     <Layout>
       <SingleCourseWrapper>
         <div className="course-intro mx-auto grid">
           <div className="course-img flex justify-center items-center">
-            <img className="w-3/4 h-auto" src={imageSrc} alt={imageSrc} />
+            <img className="w-2/4 h-auto" src={imageSrc} alt={imageSrc} />
           </div>
 
           <div className="course-details">
+            <div className="course-intro mx-auto ">
+              {" "}
+              <div className="course-head">
+                <div className="font-semibold text-2xl">{title}</div>
+              </div>
+              {/* <div className="course-body">
+            <p className="course-para text-white-important">
+              {description ? parse(description) : null}
+            </p>
+          </div> */}
+            </div>
             {/* <div className="course-category bg-white text-dark text-capitalize fw-6 fs-12 d-inline-block">
             {category}
           </div> */}
-            <div className="course-head">
-              <div className="font-semibold text-2xl">{title}</div>
-            </div>
 
-            <div className="course-body">
-              <p className="course-para ">{description}</p>
-              {/* <div className="course-rating flex">
+            {/* <div className="course-rating flex">
               <span className="rating-star-val fw-8 fs-16">{rating_star}</span>
               <StarRating rating_star={rating_star} />
               <span className="rating-count fw-5 fs-14">({rating_count})</span>
               <span className="students-count fs-14">{students}</span>
             </div> */}
-
-              <ul className="course-info">
-                <li>
-                  <span className="fs-14">
-                    Created by:{" "}
-                    <span className="fw-6 opacity-08">
-                      {instructors?.replace(/"/g, "")}
-                    </span>
+            <ul className="course-info">
+              <li>
+                <span className="fs-14">
+                  Created by:{" "}
+                  <span className="fw-6 opacity-08">
+                    {instructor?.replace(/"/g, "")}
                   </span>
-                </li>
-                {/* <li className="flex">
+                </span>
+              </li>
+              {/* <li className="flex">
                   <span>
                     <MdInfo />
                   </span>
@@ -98,38 +149,79 @@ const SingleTrainingDetail = () => {
                     Last updated 9/2015
                   </span>
                 </li> */}
-                <li className="flex">
-                  <span>
-                    <TbWorld />
-                  </span>
-                  <span className="fs-14 course-info-txt fw-5">English </span>
-                </li>
-                <li className="flex">
-                  <span>
-                    <RiClosedCaptioningFill />
-                  </span>
-                  <span className="fs-14 course-info-txt fw-5">
-                    English [Auto]
-                  </span>
-                </li>
-              </ul>
-            </div>
-
+              <li className="flex">
+                <span>
+                  <TbWorld />
+                </span>
+                <span className="fs-14 course-info-txt fw-5">English </span>
+              </li>
+              {/* <li className="flex">
+                <span>
+                  <RiClosedCaptioningFill />
+                </span>
+                <span className="fs-14 course-info-txt fw-5">
+                  English [Auto]
+                </span>
+              </li> */}
+              <li className="flex">
+                <span>
+                  <FaCalendarAlt className="text-white-500  " />
+                </span>
+                <span className="fs-14 course-info-txt fw-5">
+                  Date: {formattedDateTimeET?.replace("at", ", ")} ET /{" "}
+                  {formattedDateTimePT} PT
+                </span>
+              </li>
+              <li className="flex">
+                <span>
+                  <FaClock className="text-white-500  " />
+                </span>
+                <span className="fs-14 course-info-txt fw-5">
+                  Duration:- {duration ? duration : null}
+                </span>
+              </li>
+            </ul>
             <div className="course-foot">
               <div className="course-price">
-                {discountedPrice ? (
-                  <>
-                    <span className="new-price fs-26 fw-8">
-                      ${discountedPrice}
-                    </span>
-                    <span className="old-price fs-26 fw-6">${price}</span>
-                  </>
+                {selectedPricing ? (
+                  <span className="new-price fs-26 fw-8">
+                    $
+                    {selectedPricing
+                      ? selectedPricing.price
+                      : Pricings[0]?.price
+                      ? Pricings[0]?.price
+                      : discountedPrice}
+                  </span>
                 ) : (
-                  <span className="new-price fs-26 fw-8">${price}</span>
+                  <span className="new-price fs-26 fw-8">
+                    ${discountedPrice}
+                  </span>
                 )}
               </div>
             </div>
-
+            {Pricings?.length >= 1 && (
+              <div className="course-pricing">
+                <label
+                  htmlFor="sessionType"
+                  className="block text-sm font-medium text-gray-700"
+                >
+                  Session Type
+                </label>
+                <select
+                  id="sessionType"
+                  name="sessionType"
+                  className="mt-1 block w-full pl-3 pr-10 py-2 text-base border border-gray-300 bg-white text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
+                  onChange={handlePricingChange}
+                  value={selectedPricing ? selectedPricing.id : ""}
+                >
+                  {Pricings?.map((pricing) => (
+                    <option key={pricing.id} value={pricing.id}>
+                      {pricing.sessionType} - ${pricing.price}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            )}
             <Link
               to="/cart"
               className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 mt-10"
@@ -138,16 +230,17 @@ const SingleTrainingDetail = () => {
                   courseID,
                   imageSrc,
                   title,
-                  instructors,
-                  discountedPrice,
-                  price
+                  instructor,
+                  selectedPricing ? selectedPricing.price : discountedPrice,
+                  selectedPricing
+                  // discountedPrice
                   // category
+                  // price
                 )
               }
             >
               Add to Cart
             </Link>
-
             {/* <div className="course-btn">
               <Link
                 to="/cart"
@@ -168,7 +261,6 @@ const SingleTrainingDetail = () => {
             </div> */}
           </div>
         </div>
-
         {/* <div className="course-full bg-white text-dark">
         <div className="course-learn mx-auto">
           <div className="course-sc-title">What you'll learn</div>
@@ -203,20 +295,89 @@ const SingleTrainingDetail = () => {
       </div> */}
       </SingleCourseWrapper>
       <section className="bg-white dark:bg-gray-900">
-        <div className="container flex flex-col  px-4 py-12">
-          <h2 className="max-w-2xl  text-2xl font-semibold tracking-tight text-gray-800 xl:text-3xl dark:text-white">
-            <span className="text-blue-500">Why Should You Attend : </span>
-          </h2>
+        {description ? (
+          <div className="container flex flex-col px-4 py-12">
+            <h2 className="max-w-2xl text-2xl font-semibold tracking-tight text-gray-800 xl:text-3xl dark:text-white">
+              <span className="text-blue-500">Description :</span>
+            </h2>
 
-          <p className=" mt-2  text-gray-500 dark:text-gray-300">
-            {what_you_will_learn}
-          </p>
-        </div>
+            <p className="mt-2 text-gray-500 dark:text-gray-300">
+              {description ? parse(description) : null}
+            </p>
+          </div>
+        ) : null}
+        {why_register ? (
+          <div className="container flex flex-col px-4 py-12">
+            <h2 className="max-w-2xl text-2xl font-semibold tracking-tight text-gray-800 xl:text-3xl dark:text-white">
+              <span className="text-blue-500">Why Register :</span>
+            </h2>
+
+            <p className="mt-2 text-gray-500 dark:text-gray-300">
+              {why_register ? parse(why_register) : null}
+            </p>
+          </div>
+        ) : null}
+        {what_you_will_learn ? (
+          <div className="container flex flex-col px-4 py-12">
+            <h2 className="max-w-2xl text-2xl font-semibold tracking-tight text-gray-800 xl:text-3xl dark:text-white">
+              <span className="text-blue-500">Why Should You Attend : </span>
+            </h2>
+
+            <p className="mt-2 text-gray-500 dark:text-gray-300">
+              {what_you_will_learn ? parse(what_you_will_learn) : null}
+            </p>
+          </div>
+        ) : null}
+        {areas_covered ? (
+          <div className="container flex flex-col px-4 py-12">
+            <h2 className="max-w-2xl text-2xl font-semibold tracking-tight text-gray-800 xl:text-3xl dark:text-white">
+              <span className="text-blue-500">
+                Areas Covered in the Webinar Session :
+              </span>
+            </h2>
+
+            <div className="mt-2 text-gray-500 dark:text-gray-300">
+              {areas_covered ? parse(areas_covered) : null}
+            </div>
+          </div>
+        ) : null}
+        {who_will_benefit ? (
+          <div className="container flex flex-col px-4 py-12">
+            <h2 className="max-w-2xl text-2xl font-semibold tracking-tight text-gray-800 xl:text-3xl dark:text-white">
+              <span className="text-blue-500">Who will benefit?</span>
+            </h2>
+
+            <p className="mt-2 text-gray-500 dark:text-gray-300">
+              {who_will_benefit ? parse(who_will_benefit) : null}
+            </p>
+          </div>
+        ) : null}
+        {instructor_profile ? (
+          <div className="container flex flex-col px-4 py-12">
+            <h2 className="max-w-2xl text-2xl font-semibold tracking-tight text-gray-800 xl:text-3xl dark:text-white">
+              <span className="text-blue-500">Instructor Profile :</span>
+            </h2>
+
+            <p className="mt-2 text-gray-500 dark:text-gray-300">
+              {instructor_profile ? parse(instructor_profile) : null}
+            </p>
+          </div>
+        ) : null}
+        {background ? (
+          <div className="container flex flex-col px-4 py-12">
+            <h2 className="max-w-2xl text-2xl font-semibold tracking-tight text-gray-800 xl:text-3xl dark:text-white">
+              <span className="text-blue-500">Background :</span>
+            </h2>
+
+            <p className="mt-2 text-gray-500 dark:text-gray-300">
+              {background ? parse(background) : null}
+            </p>
+          </div>
+        ) : null}
       </section>
     </Layout>
   );
 };
-
 const SingleCourseWrapper = styled.div`
   background: var(--clr-dark);
   color: var(--clr-white);

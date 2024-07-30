@@ -27,7 +27,6 @@ function Cart() {
     total_amount,
     clearCart,
   } = useCartContext();
-
   const applyPromoCode = async () => {
     setPromoMessage("");
     if (!promoCode) return;
@@ -41,7 +40,7 @@ function Cart() {
             "Content-Type": "application/json",
             Authorization: `Bearer ${token}`,
           },
-          body: JSON.stringify({ cartItems, code: promoCode, siteId: 2 }),
+          body: JSON.stringify({ cartItems, code: promoCode, siteId: 1 }),
         }
       );
 
@@ -165,8 +164,8 @@ function Cart() {
                   </button>
                 </div>
                 <div className="cart-items-list grid">
-                  {cartItems.map((cartItem) => (
-                    <CartItem key={cartItem.courseID} cartItem={cartItem} />
+                  {cartItems.map((cartItem, index) => (
+                    <CartItem key={index} cartItem={cartItem} />
                   ))}
                 </div>
                 <div className="promo-code-section">
